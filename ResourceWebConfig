@@ -1,0 +1,16 @@
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+/**
+ * @author jeanpierrekou
+ *
+ */
+@Configuration
+@EnableWebMvc
+@ComponentScan({ "com.jteksolutions.ged.controllers" })
+public class ResourceWebConfig implements WebMvcConfigurer {
+
+}
+// @CrossOrigin(origins = "cors.url")
